@@ -1,3 +1,9 @@
+# Install
+
+To install the cookiesMananger you just have to take all the files inside the "files" folder an drop all of then in the root project folder, after it paste the .exe and run
+
+
+
 # cookiesMananger
 a biscuit tray
 
