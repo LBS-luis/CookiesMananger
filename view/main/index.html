@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../loading/pace-theme-minimal.css">
+    <link rel="stylesheet" href="./index.css">
+    <title>cookies</title>
+</head>
+
+<body >
+    <header class="titleMenu">
+        <div class="btnWin menu">
+            <svg  id='menuSvg' xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"  fill="rgba(255, 255, 255, 0.911)"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+        </div>
+        <div class="titleMain">Cookies Mananger</div>
+        <div class="drag"></div>
+        <div class="btnWin close"></div>
+        <div class="btnWin min"></div>
+    </header>
+
+    <div class="dbMenuCont">
+        <div class="dbMenuSrcInput">
+            <p>Data-base :</p>
+            <input type="text" placeholder="Data-base path" id="pathInput">
+            <div class="dbMenuBtnConfirm">confirm</div>
+        </div>
+    </div>
+
+    <div class="container cookies">
+    <table class="dbTable">   
+    </table>
+    </div> 
+
+
+</body>
+
+<script  src="./index.js"></script>
+<script src="../../sqlite3.js"></script>
+<script src="../../loading/pace.min.js"></script>
+</html>

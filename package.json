@@ -1,0 +1,31 @@
+{
+  "name": "cookies",
+  "version": "1.0.0",
+  "description": "cookies mananger",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "author": "luis",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^15.0.0"
+  },
+  "dependencies": {
+    "sqlite3": "^5.0.2"
+  },
+  "build": {
+    "appId": "Cookies",
+    "productName": "CookiesMananger",
+    "target": "NSIS",
+    "directory": {
+      "output": "build"
+    },
+    "nsis": {
+      "allowToChangeInstallationDirectory": true,
+      "oneClick": false
+    }
+  }
+}

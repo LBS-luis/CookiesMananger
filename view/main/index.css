@@ -1,0 +1,255 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: #333;
+}
+
+/* DataBase Table*/
+.dbTable{
+    margin: 0 auto;
+    background-color: transparent;
+    text-align: center;
+    border-collapse: separate;
+    color: rgba(255, 255, 255, 0.705);
+}
+/* Database div container*/
+.container{
+    margin: 0 auto;
+    margin-top: 40px;
+    width: fit-content;
+    overflow: auto;
+    height: 90vh;
+    transition: 500ms ease-in-out;
+    font-family: helvetica;
+    font-size: 0.8rem;
+}
+
+/* div container scrollbar*/
+.container::-webkit-scrollbar {
+    width: 10px;
+  }
+
+.container::-webkit-scrollbar-track {
+    background: rgba(42, 42, 42, 0.849);
+    border-radius: 10px;
+  }
+
+.container::-webkit-scrollbar-thumb {
+    background: rgba(82, 82, 82, 0.787);
+    border-radius: 10px;
+  }
+
+/* table header*/
+.dbTitle{
+    position: sticky;
+  top: 0;
+}
+/* table itens*/
+.dbTable td{
+    padding: 4px;
+    border: solid 1px rgba(82, 82, 82, 0.787);
+    background-color: rgba(42, 42, 42, 0.849);
+}
+
+.dbTable tr{
+    margin-bottom: 4px;
+    background-color: rgba(42, 42, 42, 0.849);
+}
+
+
+/*TittleMenu*/
+
+.titleMenu{
+    width: 100vw;
+    background-color: rgb(31, 31, 31);
+    height: 25px;
+    position: fixed;
+    top: 0px;
+}
+
+.titleMenu div{
+    display: inline-block;
+}
+
+/* title btn default style*/
+.btnWin{
+    height: 100%;
+    width: 40px;
+    text-align: center;
+    margin-left: 0px;
+    z-index: 10;
+}
+
+/* specific btns close and min*/
+.close{
+    background-image: url(./img/close.svg);
+    background-repeat: no-repeat;
+    background-position: center; 
+    float: right;
+
+}
+.close:hover{
+    background-color: rgba(250, 63, 63, 0.829);
+}
+
+
+.min{
+    background-image: url(./img/min.svg);
+    background-repeat: no-repeat;
+    background-position-y: -4px; 
+    background-position-x: 8px; 
+    float: right;
+}
+.min:hover{
+    background-color: rgb(95, 95, 95);
+}
+
+/*menu button*/
+.menu{
+    /*background-image: url(./img/menu.svg);*/
+    background-repeat: no-repeat;
+    background-position-y: 2px; 
+    background-position-x: 9px; 
+    float: left;
+    
+}
+
+.menu svg{
+    height: 25px;
+    width: 40px;
+    
+}
+
+/* title text */
+.titleMain{
+    float: left;
+    font-family: helvetica;
+    color: rgba(255, 255, 255, 0.911);
+    text-align: center;
+    height: 100%;
+    width: 121px;
+    line-height: 25px;
+    font-size: 0.9rem;
+    margin-left: 5px;
+    user-select: none;
+    cursor: default;
+}
+/* Dragable area*/
+.drag{
+    width: calc(100vw - 247px);
+    height: 100%;
+    background-color: rgb(31, 31, 31);
+    -webkit-app-region: drag;
+}
+
+@keyframes menuAnimate{
+    
+    to{transform: rotate(0deg);}
+    from{transform: rotate(180deg);}
+
+}
+
+@keyframes menuAnimaterev{
+    
+    to{transform: rotate(0deg);}
+    from{transform: rotate(-180deg);}
+
+}
+
+.dbMenuCont{
+    width: 100%;
+    height: 100px;
+    margin-top: -100px;
+    background-color: rgb(66, 66, 66);
+    transition: 500ms ease-in-out;
+}
+
+/*animation*/
+
+.menuAnimate{
+    animation: menuAnimate 500ms ease-in-out;
+}
+
+.menuAnimaterev{
+    animation: menuAnimaterev 500ms ease-in-out;
+}
+
+/*db Menu functions*/
+
+.dbMenuSrcInput{
+    width: fit-content;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 5px;
+    padding-top: 5px;
+    box-sizing: border-box;
+}
+.dbMenuSrcInput p{
+    display: inline-block;
+    font-size: 0.9rem;
+    font-family: helvetica;
+    color: rgba(255, 255, 255, 0.911);
+    font-weight: bold;
+    line-height: 25px;
+    padding-right: 4px;
+    user-select: none;
+    cursor: default;
+}
+.dbMenuSrcInput input{
+    display: inline-block;
+    width: 50vw;
+    box-sizing: border-box;
+    height: 25px;
+    outline: none;
+    background-color: transparent;
+    border: solid rgba(255, 255, 255, 0.911) 1px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.911);
+}
+.dbMenuBtnConfirm{
+    display: inline-block;
+    width: 80px;
+    font-family: helvetica;
+    font-size: 0.9rem;
+    background-color: rgb(0, 66, 75);
+    color: rgba(255, 255, 255, 0.911);
+    padding: 4px;
+    box-sizing: border-box;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+/*cookie animation*/
+
+.cookieAnimation{
+    position: absolute;
+    left: calc(50vw - 200px);
+    transition: 500ms ease-in-out;
+    margin-top: 90px;
+}
+.cookie{
+    width: 400px;
+    animation: cookie 5s ease infinite;
+}
+.cookieFace{
+    position: absolute;
+    width: 168px;
+    left: calc(200px - 84px);
+    top: 167px;
+
+}
+
+
+@keyframes cookie{
+    
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
