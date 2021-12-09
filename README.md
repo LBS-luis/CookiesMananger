@@ -1,7 +1,10 @@
 # Install
 
-To install the cookiesMananger you just have to take all the files inside the "files" folder an drop all of then in the root project folder, after it paste the .exe and run
+All the installation files is in the releases, dowload the zip and run the .exe file
 
+#obs
+
+the node modules folder is compressed, if you donwload the source code extract that to the thing work
 
 
 # cookiesMananger
