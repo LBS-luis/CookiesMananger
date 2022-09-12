@@ -2,11 +2,6 @@
 
 All the installation files is in the releases, dowload the zip and run the .exe file
 
-# obs
-
-the node modules folder is compressed, if you donwload the source code extract that to the thing work
-
-
 # cookiesMananger
 a biscuit tray
 
