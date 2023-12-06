@@ -17,5 +17,3 @@ The last step is paste this path in the link bar in cookieMananger as the below 
 this will bring you some data of inside the sqlite file.
 
 ![image](https://user-images.githubusercontent.com/53980283/137573619-b83ae964-ab96-4b35-8b19-1b163ac02734.png)
-
-this project probably ends here, its main objective was the study of electron technology 
