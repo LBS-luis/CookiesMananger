@@ -2,7 +2,7 @@
 
 All the installation files is in the releases, dowload the zip and run the .exe file
 
-# cookiesMananger
+# cookies manager
 a biscuit tray
 
 The cookieManager is an sqlite interpreter in his essence
